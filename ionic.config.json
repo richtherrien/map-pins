@@ -1,5 +1,7 @@
 {
   "name": "google-maps-pins",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
