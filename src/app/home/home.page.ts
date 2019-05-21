@@ -4,16 +4,7 @@ import {
   Platform,
   LoadingController
 } from '@ionic/angular';
-import {
-  GoogleMaps,
-  GoogleMap,
-  GoogleMapsEvent,
-  Geocoder,
-  GeocoderResult,
-  Marker,
-  GoogleMapsAnimation,
-  MyLocation
-} from '@ionic-native/google-maps';
+
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { StateService } from '../providers/state.service';
 
@@ -32,15 +23,10 @@ export class HomePage implements OnInit {
   loading: any;
   apiKey = 'API_KEY';
 
-
-  latitude: number;
-  longitude: number;
   autocompleteService: any;
   placesService: any;
   query: string = '';
   places: any = [];
-  searchDisabled: boolean;
-  saveDisabled: boolean;
   location: any;
 
   constructor(
