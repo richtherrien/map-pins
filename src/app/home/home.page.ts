@@ -74,7 +74,7 @@ export class HomePage implements OnInit {
   }
 
   searchPlace() {
-    if (this.query.length > 0 && !this.searchDisabled) {
+    if (this.query.length > 0) {
 
       let config = {
         types: ['geocode'],
